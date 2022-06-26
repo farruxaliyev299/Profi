@@ -1,0 +1,185 @@
+﻿<!doctype html>
+<html class=no-js lang=en>
+<!-- Mirrored from demo.htmlhunters.com/profi/beauty.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jun 2022 10:28:30 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=x-ua-compatible content="ie=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>PROFI</title>
+    <link rel=stylesheet href=~/assets/css/vendor.css>
+    <link rel=stylesheet href=~/assets/css/style.css>
+    <link rel=stylesheet href=~/assets/fonts/font-awesome/css/font-awesome.css>
+</head>
+
+<body data-spy=scroll data-target=#header-navbar data-offset=140>
+    <div id=page-start-anchor></div>
+    <section class="header header-fixed-xl">
+        <div class="header-top-line bg-primary">
+            <div class=container>
+                <div class=row>
+                    <nav class="navbar navbar-expand navbar-dark navbar-short justify-content-between w-100">
+                        <ul class=navbar-nav>
+                            <li class="nav-item dropdown dropdown-flat dropdown-flat-primary">
+                                <a class="nav-link text-white dropdown-toggle" href=# data-toggle=dropdown>
+                                    <span class=text-uppercase>Landings</span>
+                                </a>
+                                <div class=dropdown-menu>
+                                    <a class=dropdown-item href=index.html>Browse all</a> <a class=dropdown-item href=therapist.html>Massage</a> <a class=dropdown-item
+                                                                                                                                                    href=attorney.html>Lawyer</a> <a class=dropdown-item
+                                                                                                                                                                                     href=contractor.html>Contractor</a> <a class=dropdown-item
+                                                                                                                                                                                                                            href=beauty.html>Beauty</a> <a class=dropdown-item
+                                                                                                                                                                                                                                                           href=restaurant.html>Restaurant</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-flat dropdown-flat-primary">
+                                <a class="nav-link text-white dropdown-toggle" href=# data-toggle=dropdown>
+                                    <span class=text-uppercase>Documentation</span>
+                                </a>
+                                <div class=dropdown-menu>
+                                    <a class=dropdown-item
+                                       href=documentation/getting-started/introduction.html>Introduction</a> <a class=dropdown-item href=documentation/getting-started/build-tools.html>
+                                        Build
+                                        Tools
+                                    </a> <a class=dropdown-item
+                                            href=documentation/getting-started/customizing.html>Customizing</a> <a class=dropdown-item href=documentation/components/alerts.html>Components</a> <a class=dropdown-item href=documentation/plugins/calendar.html>Plugins</a>
+                                </div>
+                            </li>
+                            <li class=nav-item>
+                                <a class="nav-link text-white" href=booking.html>
+                                    <span class=text-uppercase>Booking form</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class=navbar-nav>
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <li class=nav-item class="justify-content-end">
+                                    <a class="nav-link text-white" asp-controller="Account" asp-action="Login">
+                                        <span class=text-uppercase>Login</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item class="justify-content-end">
+                                    <a class="nav-link text-white" asp-controller="Account" asp-action="Register">
+                                        <span class=text-uppercase>Register</span>
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class=nav-item class="justify-content-end">
+                                    <a class="nav-link text-white">
+                                        <span class=text-uppercase>@User.Identity.Name</span>
+                                    </a>
+                                </li>
+                                <li class=nav-item class="justify-content-end">
+                                    <a class="nav-link text-white" asp-controller="Account" asp-action="Logout">
+                                        <span class=text-uppercase>Logout</span>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+        <div class="header-main bg-white">
+            <div class=container>
+                <div class=row>
+                    <nav class="navbar navbar-expand-lg navbar-light w-100" id=header-navbar>
+                        <a class="navbar-brand font-weight-bold" href=index.html>PROFI</a> <button class=navbar-toggler
+                                                                                                   type=button data-toggle=collapse data-target=#navbarSupportedContent
+                                                                                                   aria-controls=navbarSupportedContent aria-expanded=false
+                                                                                                   aria-label="Toggle navigation">
+                            <span class=navbar-toggler-icon></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id=navbarSupportedContent>
+                            <ul class="navbar-nav ml-auto">
+                                <li class=nav-item>
+                                    <a class="nav-link text-uppercase" data-toggle=smooth-scroll
+                                       href=#about>About</a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class="nav-link text-uppercase" data-toggle=smooth-scroll
+                                       href=#services>Services</a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class="nav-link text-uppercase" data-toggle=smooth-scroll
+                                       href=#testimonials>Testimonials</a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class="nav-link text-uppercase" data-toggle=smooth-scroll
+                                       href=#our-work>Our work</a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class="nav-link text-uppercase" data-toggle=smooth-scroll
+                                       href=#faq>FAQ</a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class="nav-link text-uppercase" data-toggle=smooth-scroll
+                                       href=#vouchers>Vouchers</a>
+                                </li>
+                                <li class=nav-item>
+                                    <a class="nav-link text-uppercase" data-toggle=smooth-scroll
+                                       href=#contacts>Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    @RenderBody()
+    <section class="footer bg-secondary">
+        <div class="container py-19 py-sm-23 py-lg-25">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-lg-5 mb-14 mb-md-0">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                        <a href=index.html class=footer-brand>PROFI</a>
+                        <div class="brand-icons-list ml-10 ml-sm-20">
+                            <a href=#
+                               class="brand-icon brand-icon-circle brand-icon-facebook">
+                                <i class="fa fa-facebook-f"></i>
+                            </a><a href=#
+                                   class="brand-icon brand-icon-circle brand-icon-twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a><a href=# class="brand-icon brand-icon-circle brand-icon-pinterest">
+                                <i class="fa fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 text-center d-none d-lg-block">
+                    <a href=# class=footer-icon
+                       data-toggle=smooth-scroll data-target=#page-start-anchor>
+                        <i class=material-icons>arrow_upward</i>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 text-center text-md-right">
+                    <ul class=footer-menu>
+                        <li><a href=#>Privacy Policy</a></li>
+                        <li><a href=#>Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176058743-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-176058743-1');</script>
+    <script src=~/assets/js/vendor.js></script>
+    <script src=~/assets/js/polyfills.js></script>
+    <script src=~/assets/js/app.js></script>
+</body>
+<!-- Mirrored from demo.htmlhunters.com/profi/beauty.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jun 2022 10:28:39 GMT -->
+
+</html>
