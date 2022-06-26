@@ -70,7 +70,7 @@ namespace Profi
             {
                 endpoints.MapControllerRoute(
                     name: "areas",
-                    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+                    pattern: "{area:exists}/{controller=AdminLogin}/{action=Login}/{id?}"
              );
                 endpoints.MapControllerRoute(
                     name: "default",

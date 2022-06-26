@@ -79,11 +79,6 @@ namespace Profi.Controllers
                 ModelState.AddModelError("", "Email or Password is incorrect1");
                 return View(user);
             }
-            if (!userDb.IsActivated)
-            {
-                ModelState.AddModelError("", "Wait for Activation");
-                return View(user);
-            }
             return RedirectToAction("Index", "Home");
         }
     }
