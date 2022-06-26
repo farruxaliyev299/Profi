@@ -44,7 +44,6 @@ namespace Profi.Controllers
                 }
                 return View(user);
             }
-            await _signInManager.SignInAsync(newUser, true);
             return RedirectToAction(nameof(Login));
         }
 
