@@ -71,7 +71,7 @@ namespace Profi.Areas.AdminPanel.Controllers
             {
                 return BadRequest();
             }
-            var testimonialDb = _context.Testimonials.Find(id);
+            var testimonialDb = await _context.Testimonials.FindAsync(id);
             if (testimonialDb == null)
             {
                 return NotFound();
